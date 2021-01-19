@@ -1,19 +1,101 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <title>Hello World!</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
+<html lang="pt-br">
 
-    <!-- You can also require other files to run in this process -->
-    <script src="./renderer.js"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annetta | Sistema Tintométrico</title>
+
+    <link rel="icon" href="./public/images/LogoAnnetta.jpg"/>
+
+    <link rel="stylesheet" href="./public/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,700;1,100;1,200;1,400&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <image src="./public/images/LogoAnnetta.jpg" id="logo" alt="Logo Annetta"/>
+        
+
+        <svg width="1" height="75" viewBox="0 0 1 75" fill="none" xmlns="http://www.w3.org/2000/svg" id="line1">
+            <line x1="0.5" y1="-5" x2="0.499997" y2="75" stroke="#F4F4F4"/>
+        </svg>
+
+        <section id="Items">
+            <div class="cores">
+                Cores
+            </div>
+
+        </section>
+
+
+    </header>
+        
+
+    <main class="container">
+
+        <section id="balance">
+            <h2>Balanço</h2>
+            
+            <div class="card">
+                <h3>Entradas</h3>
+                <p>R$ 5.000,00</p>
+            </div>
+           
+            <div class="card">
+                <h3>Saídas</h3>
+                <p>R$ 2.000,00</p>
+            </div>
+
+            <div class="card total">
+                <h3>Total</h3>
+                <p>R$ 3.000,00</p>
+            </div>          
+
+            
+        </section>
+
+        <section id="transaction">
+            <h2>Transações</h2>
+
+            <table id="data-table">
+                <thead>
+                    <tr>
+                        <th>Descrição</th>
+                        <th>Valor</th>
+                        <th>Data</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="description">Luz</td>
+                        <td class="expense">- R$ 500,00</td>
+                        <td class="date">23/01/2021</td>
+                    </tr>
+                    <tr>
+                        <td class="description">Criação Website</td>
+                        <td class="income">R$ 5.000,00</td>
+                        <td class="date">23/01/2021</td>
+                    </tr>
+                    <tr>
+                        <td class="description">Internet</td>
+                        <td class="expense">- R$ 200,00</td>
+                        <td class="date">23/01/2021</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p>dev.finance$</p>
+    </footer>
+
+</body>
+
 </html>
